@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.pointer-circle{
+  width: 10px;
+  height: 10px;
+  z-index: 99;
+  background-color: #fff;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) .8s;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main{
+  width: 100%;
+  background-color: black;
+}
+
+/* Css for Hero Section start  */
+
+.hero {
+  height: 100vh;
+  background-color: black;
+}
+
+.bounding{
+  width: fit-content;
+  /* background-color: red; */
+  overflow: hidden;
+}
+
+.bounding .bounding-element{
+  transform: translateY(130%);
+}
+.logo {
+  font-size: 1.18vw;
+}
+
+.hero h4 {
+  font-size: 16px;
+}
+
+.hero .heading {
+  margin-top: 91px;
+}
+
+.hero .heading h1 {
+  color: #A3A3A3;
+  font-size: 10.5vw;
+  line-height: 1;
+}
+
+.designer {
+  margin-left: 168px;
+}
+
+.blockText {
+  width: fit-content;
+}
+
+.blockText h5 {
+  font-size: 16px;
+}
+
+.hero .sub-heading {
+  margin-top: 7.22vw;
+  text-align: -webkit-right;
+}
+
+.hero .sub-heading h5 {
+  font-size: 1vw;
+}
+
+.arrow-bg {
+  width: 26px;
+  height: 26px;
+  background-color: #AAAAAA;
+}
+
+.underline-hover-effect{
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+
+.underline-hover-effect::before{
+  content: "";
+  position: absolute;
+  /* left: 0; */
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: width 0.3s linear;
+}
+
+.underline-hover-effect:hover::before{
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+/* Css for second section start */
+
+.second-section {
+  height: 100vh;
+  background-color: black;
+}
+
+.elem {
+  color: #A3A3A3;
+  border-top: 1px solid #A3A3A3;
+  max-width: 82.5vw;
+}
+
+.elem h1 {
+  font-size: 7.2vw;
+}
+
+.elem img {
+  z-index: 999;
+  height: 140%;
+  opacity: 0;
+  transform: translate(-60%, -50%);
+  pointer-events: none;
+}
+
+.elem-last {
+  border-bottom: 1px solid #A3A3A3;
+}
+
+.second-section .elem span {
+  font-size: 16px;
+}
+
+/* Css for Aboutme Section */
+
+.aboutme-section {
+  background-color: black;
+  padding-top: 12.56vw !important;
+}
+
+.about {
+  max-width: 82.5vw;
+}
+
+.aboutme-img{
+  max-width: 285px;
+}
+
+.about .explainer h4{
+  color: #A3A3A3;
+  font-size: 14px;
+}
+
+.about .explainer p{
+  max-width: 30vw;
+  font-size: 18px;
+}
+
+.about .explainer button{
+  border: 1px solid white;
+  border-radius: 20px;
+  transition: 0.7s;
+}
+
+.about .explainer button:hover{
+  background-color: white !important;
+  color: black !important;
+}
+
+.about-footer{
+  margin-top: 10vw;
+}
+.about-footer h5{
+  color: #A3A3A3;
+  font-size: 14px;
+}
+
+.footer-section{
+  background-color: black;
+  padding-top: 9vw;
+}
+
+.footer-section .footer-left h4{
+  font-weight: 400;
+  font-size: 18px;
+}
+.footer-section .footer-left h5{
+  font-size: 16px;
+}
+
+
+
+
+
+
+@media (max-width: 576px) {
+  .logo {
+    font-size: 14px;
+  }
+
+  .hero .heading h1 {
+    font-size: 68px;
+  }
+
+  .hero .heading {
+    text-align: center;
+  }
+
+  .designer {
+    margin-left: 0;
+  }
+
+  .blockText {
+    margin: auto;
+  }
+
+  .hero .sub-heading h5 {
+    font-size: 14px;
+  }
+}
