@@ -204,7 +204,7 @@ body {
 
 
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .logo {
     font-size: 14px;
   }
@@ -225,7 +225,28 @@ body {
     margin: auto;
   }
 
+  .hero .sub-heading{
+    margin-top: 5rem;
+  }
+
   .hero .sub-heading h5 {
     font-size: 14px;
+  }
+
+  .second-section{
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .elem{
+    max-width: unset;
+  }
+
+  .about .explainer p{
+    max-width: unset;
+  }
+
+  .about{
+    max-width: unset;
   }
 }
